@@ -108,13 +108,9 @@ personal-portfolio/
     
    Can be accessed from anywhere using mobile or desktop devices.
 
-11. **Personal Branding**
+10. **Personal Branding**
     
    Helps create your own identity and personal brand online.
-
-13. **Demonstrates Web Development Skills**
-    
-   Shows practical knowledge of HTML, CSS, JavaScript, and UI design.
 
 
 
@@ -140,10 +136,7 @@ personal-portfolio/
     
    Some features may not work properly on all browsers or devices.
 
-11. **Needs Technical Knowledge**
+10. **Needs Technical Knowledge**
     
    Basic web development knowledge is required to build and maintain the site.
 
-13. **Performance Issues**
-    
-   Heavy images or animations can slow down the website loading speed.
