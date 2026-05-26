@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tharushni S V | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+
+  <canvas id="particleCanvas"></canvas>
+
+  
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-t">T</span>harushni<span class="brand-dot">.</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"     class="nav-link active">Home</a></li>
+      <li><a href="#about"    class="nav-link">About</a></li>
+      <li><a href="#skills"   class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact"  class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HOME ========== -->
+  <section class="hero" id="home">
+    <div class="hero-left reveal">
+      <p class="hero-greeting">Hello, World! <span class="wave">👋</span></p>
+      <h1 class="hero-name">
+        I'm <span class="name-highlight">Tharushni</span><br/>
+        
+      </h1>
+      <div class="typing-wrap">
+        <span class="typing-static">Aspiring </span>
+        <span class="typing-text" id="typingText"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        A highly motivated IT student skilled in Java, HTML &amp; CSS — passionate about building well-organized, scalable web interfaces and solving complex logic problems.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/tharushni-s-v-8258ab32a" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Tharushni-18"                     target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:tharushnivijayakumartharushniv@gmail.com"     aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+917358822380"                                    aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-right reveal">
+      <div class="photo-wrapper">
+        <div class="photo-glow"></div>
+        <div class="photo-frame">
+          <img src="tharushni image.jpeg" alt="Tharushni S V" class="profile-img" />
+        </div>
+        <div class="orbit orbit-1">
+          <div class="orbit-badge"><i class="fa-brands fa-java"></i></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-badge html"><i class="fa-brands fa-html5"></i></div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-badge css"><i class="fa-brands fa-css3-alt"></i></div>
+        </div>
+      </div>
+      <div class="hero-quick-stats">
+        <div class="qs"><span class="qs-num" data-target="2">0</span><span>+</span><p>Internships</p></div>
+        <div class="qs-sep"></div>
+        <div class="qs"><span class="qs-num" data-target="2">0</span><span>+</span><p>Projects</p></div>
+        <div class="qs-sep"></div>
+        <div class="qs"><span class="qs-num" data-target="5">0</span><span>+</span><p>Certifications</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="sec-tag reveal">01 — About Me</div>
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <h2 class="sec-title">Know Who <em>I Am</em></h2>
+        <p>I'm <strong>Tharushni S V</strong>, a B.Tech Information Technology student at V.S.B College of Engineering Technical Campus (affiliated with Anna University), Coimbatore, graduating in 2027.</p>
+        <p>I'm passionate about web development and problem-solving. With hands-on experience in Java, HTML, and CSS through internships and academic projects, I thrive on building clean, scalable, and user-friendly digital solutions.</p>
+        <p>Beyond code, I'm an active event coordinator and kabaddi champion — I bring the same energy and teamwork to everything I do!</p>
+        <div class="about-tags">
+          <span><i class="fa-solid fa-graduation-cap"></i> B.Tech IT — 87%</span>
+          <span><i class="fa-solid fa-location-dot"></i> Coimbatore, TN</span>
+          <span><i class="fa-solid fa-language"></i> English &amp; Tamil</span>
+          <span><i class="fa-solid fa-trophy"></i> Best Paper Presenter</span>
+        </div>
+      </div>
+      <div class="about-right reveal">
+        <h3 class="timeline-title">Education &amp; Journey</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-icon"><i class="fa-solid fa-university"></i></div>
+            <div class="tl-body">
+              <span class="tl-year">2023 – 2027</span>
+              <h4>B.Tech Information Technology</h4>
+              <p>V.S.B College of Engineering Technical Campus<br/>Affiliated with Anna University, Coimbatore</p>
+              <span class="tl-grade">CGPA: 87%</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="tl-body">
+              <span class="tl-year">2022 – 2023</span>
+              <h4>Higher Secondary Certificate (HSC)</h4>
+              <p>Sri Vidhya Nikethan Matric Higher Secondary School, Kangeyam</p>
+              <span class="tl-grade">Score: 83%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills" id="skills">
+    <div class="sec-tag reveal">02 — Skills</div>
+    <h2 class="sec-title reveal">My <em>Tech Stack</em></h2>
+
+    <div class="skills-layout">
+      <div class="skill-col reveal">
+        <h3 class="skill-group-label"><i class="fa-solid fa-code"></i> Programming Languages</h3>
+        <div class="skill-item">
+          <div class="skill-meta"><span><i class="fa-brands fa-java"></i> Java</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span><i class="fa-brands fa-html5"></i> HTML5</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span><i class="fa-brands fa-css3-alt"></i> CSS3</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span><i class="fa-brands fa-js"></i> JavaScript (Basic)</span><span>65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-col reveal">
+        <h3 class="skill-group-label"><i class="fa-solid fa-tools"></i> Tools &amp; Interests</h3>
+        <div class="skill-cards-grid">
+          <div class="sk-card"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+          <div class="sk-card"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+          <div class="sk-card"><i class="fa-solid fa-globe"></i><span>Web Dev</span></div>
+          <div class="sk-card"><i class="fa-solid fa-robot"></i><span>GenAI Tools</span></div>
+          <div class="sk-card"><i class="fa-solid fa-layer-group"></i><span>Full Stack</span></div>
+          <div class="sk-card"><i class="fa-solid fa-puzzle-piece"></i><span>Problem Solving</span></div>
+        </div>
+
+        <h3 class="skill-group-label" style="margin-top:28px"><i class="fa-solid fa-heart-pulse"></i> Soft Skills</h3>
+        <div class="soft-skills">
+          <span>Problem Solving</span>
+          <span>Team Collaboration</span>
+          <span>Time Management</span>
+          <span>Event Coordination</span>
+          <span>Leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects" id="projects">
+    <div class="sec-tag reveal">03 — Projects</div>
+    <h2 class="sec-title reveal">Featured <em>Projects</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="proj-header">
+          <div class="proj-icon"><i class="fa-solid fa-qrcode"></i></div>
+          <div class="proj-links-top">
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Code Documentation Generator</h3>
+        <p class="proj-sub">with QR Code Security &amp; Voice Output</p>
+        <p class="proj-desc">Generates structured code documentation with secure QR code access and provides voice output for easy understanding and accessibility.</p>
+        <div class="proj-tags">
+          <span>Java</span><span>QR Code</span><span>Voice API</span><span>Documentation</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="proj-header">
+          <div class="proj-icon ai"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="proj-links-top">
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <h3>AI-Based Code Plagiarism Detector</h3>
+        <p class="proj-sub">Using Java &amp; AI Algorithms</p>
+        <p class="proj-desc">An AI-powered Java tool that detects code similarity and plagiarism even with modifications, and generates detailed reports to ensure code originality.</p>
+        <div class="proj-tags">
+          <span>Java</span><span>AI</span><span>Plagiarism Detection</span><span>Reports</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="experience" id="experience">
+    <div class="sec-tag reveal">04 — Experience &amp; Certs</div>
+    <div class="exp-grid">
+
+      <div class="exp-col reveal">
+        <h2 class="sec-title">Work <em>Experience</em></h2>
+        <div class="exp-cards">
+
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <div class="exp-logo"><i class="fa-solid fa-briefcase"></i></div>
+              <div>
+                <h4>Web Development Intern</h4>
+                <p class="exp-company">Prodigy InfoTech</p>
+                <span class="exp-date"><i class="fa-regular fa-calendar"></i> Dec 2025 – Jan 2026</span>
+              </div>
+            </div>
+            <ul class="exp-points">
+              <li>Enhanced practical knowledge of HTML and CSS</li>
+              <li>Improved problem-solving skills in real-world scenarios</li>
+              <li>Collaborated on project assignments strengthening HTML, CSS &amp; JavaScript skills</li>
+            </ul>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <div class="exp-logo saiket"><i class="fa-solid fa-laptop-code"></i></div>
+              <div>
+                <h4>Frontend Development Intern</h4>
+                <p class="exp-company">The Saiket Systems</p>
+                <span class="exp-date"><i class="fa-regular fa-calendar"></i> Sep 2025 – Oct 2025</span>
+              </div>
+            </div>
+            <ul class="exp-points">
+              <li>Applied modern design principles to develop user-friendly layouts</li>
+              <li>Improved skills in HTML, CSS and basic JavaScript</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="exp-col reveal">
+        <h2 class="sec-title">Certifications &amp; <em>Achievements</em></h2>
+        <div class="cert-list">
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div>
+              <h4>Java Programming</h4>
+              <p>SimpliLearn — Code: 8695307</p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div>
+              <h4>Full Stack Web Development</h4>
+              <p>Infosys Springboard — June 10, 2025</p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div>
+              <h4>Java Programming</h4>
+              <p>Arttifai Tech — Code: ATB1D12C100</p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon workshop"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div>
+              <h4>National Workshop — GenAI Tools</h4>
+              <p>Creative Research in Exploring AI Tools</p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon workshop"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div>
+              <h4>National Workshop — Tech Trek</h4>
+              <p>Full Stack Development to Industry Mastery</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accomplish">
+          <h3><i class="fa-solid fa-star"></i> Key Accomplishments</h3>
+          <ul>
+            <li><i class="fa-solid fa-trophy"></i> Best Paper Presentation — "ChatGPT &amp; Generative AI" by Paper Arena</li>
+            <li><i class="fa-solid fa-users"></i> Event Coordinator — Blitzmac 2K26</li>
+            <li><i class="fa-solid fa-medal"></i> 1st Prize — College-Level Kabaddi Tournament</li>
+            <li><i class="fa-solid fa-code"></i> Participated in EY Techathon 6.0 Hackathon — Ernst &amp; Young</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="sec-tag reveal">05 — Contact</div>
+    <h2 class="sec-title reveal">Let's <em>Connect</em></h2>
+    <p class="contact-sub reveal">I'm open to internship opportunities, collaborations, and project ideas. Feel free to reach out!</p>
+
+    <div class="contact-grid">
+      <div class="contact-info-col reveal">
+        <div class="cinfo-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span>Email</span>
+            <a href="mailto:tharushnivijayakumartharushniv@gmail.com">tharushnivijayakumartharushniv<br/>@gmail.com</a>
+          </div>
+        </div>
+        <div class="cinfo-card">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <span>Phone</span>
+            <a href="tel:+917358822380">+91 73588 22380</a>
+          </div>
+        </div>
+        <div class="cinfo-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <div>
+            <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/in/tharushni-s-v-8258ab32a" target="_blank">tharushni-s-v</a>
+          </div>
+        </div>
+        <div class="cinfo-card">
+          <i class="fa-brands fa-github"></i>
+          <div>
+            <span>GitHub</span>
+            <a href="https://github.com/Tharushni-18" target="_blank">Tharushni-18</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-col reveal">
+        <div class="form-wrap" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" placeholder="john@email.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" placeholder="Internship Inquiry / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" rows="5" placeholder="Hi Tharushni, I'd like to connect about..."></textarea>
+          </div>
+          <button class="btn btn-primary full-w" id="sendBtn" onclick="sendMessage(event)">
+            Send Message &nbsp;<i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="success-msg" id="successMsg">
+            <i class="fa-solid fa-circle-check"></i> Message sent! Tharushni will get back to you soon.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Designed &amp; Built by <span>Tharushni S V</span> &copy; <span id="footerYear"></span></p>
+      <p class="footer-tagline">B.Tech IT | Anna University | Coimbatore</p>
+    </div>
+    <a href="#home" class="back-top" id="backTop" aria-label="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
