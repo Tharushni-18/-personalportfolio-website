@@ -141,7 +141,9 @@ personal-portfolio/
    Some features may not work properly on all browsers or devices.
 
 11. **Needs Technical Knowledge**
+    
    Basic web development knowledge is required to build and maintain the site.
 
-12. **Performance Issues**
+13. **Performance Issues**
+    
    Heavy images or animations can slow down the website loading speed.
